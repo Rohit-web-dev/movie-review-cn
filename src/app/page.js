@@ -1,6 +1,9 @@
 "use client"
 import React, { useState } from 'react';
 import Card from "@/components/Card";
+import Suggest from './(pages)/suggest/page';
+import Movies from './(pages)/movies/page';
+import TvShows from './(pages)/tvshows/page';
 
 const movies = [
   {
@@ -59,9 +62,9 @@ export default function Home() {
   const [activeTab, setActiveTab] = useState('All');
 
   const tabs = [
-    { name: 'All', content: 'All' },
-    { name: 'Movies', content: 'Movies' },
-    { name: 'TV Shows', content: 'TV Shows' },
+    { name: 'All', component: <Suggest /> },
+    { name: 'Movies', component: <Movies /> },
+    { name: 'TV Shows', component: <TvShows /> },
   ];
 
   return (
@@ -102,19 +105,19 @@ export default function Home() {
         <div className="tab-content">
           {tabs.map((tab) => (
             <div key={tab.name} className={`${activeTab === tab.name ? 'block' : 'hidden'}`}>
-              {tab.content}
+             {tab.component}
             </div>
           ))}
         </div>
       </div>
 
-      <div className="w-full lg:container mx-auto">
+      {/* <div className="w-full lg:container mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {movies.map(movie => (
             <Card key={movie.id} movie={movie} />
           ))}
         </div>
-      </div>
+      </div> */}
     </main>
   );
 }

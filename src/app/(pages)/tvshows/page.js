@@ -3,12 +3,6 @@ import React from 'react'
 
 const movies = [
   {
-    "id": 1,
-    "name": "The Shawshank Redemption",
-    "image": "https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg",
-    "rating": 9.3
-  },
-  {
     "id": 2,
     "name": "The Godfather",
     "image": "https://image.tmdb.org/t/p/w500/rPdtLWNsZmAtoZl9PK7S2wE3qiS.jpg",
@@ -19,6 +13,12 @@ const movies = [
     "name": "The Dark Knight",
     "image": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
     "rating": 9.0
+  },
+  {
+    "id": 1,
+    "name": "The Shawshank Redemption",
+    "image": "https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg",
+    "rating": 9.3
   },
   {
     "id": 5,
@@ -54,7 +54,7 @@ const movies = [
 
 const TvShows = () => {
   return (
-    <div className="mx-auto max-w-7xl items-center justify-between p-6 lg:px-8">
+    <div className="mx-auto max-w-7xl items-center justify-between">
       <p className='font-semibold py-4 text-xl'>TV Shows</p>
       <div className="w-full lg:container mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">

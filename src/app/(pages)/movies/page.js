@@ -59,7 +59,7 @@ const Movies = () => {
   const param = useParams
   console.log(param);
   return (
-    <div className="mx-auto max-w-7xl items-center justify-between p-6 lg:px-8">
+    <div className="mx-auto max-w-7xl items-center justify-between">
       <p className='font-semibold py-4 text-xl'>Movies</p>
       <div className="w-full lg:container mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
