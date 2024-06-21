@@ -6,7 +6,7 @@ import TvShows from './(pages)/tvshows/page';
 import Card from '@/components/Card';
 import api from '@/hooks/api';
 
-export default function Home() {
+const Home = () => {
   const [activeTab, setActiveTab] = useState('All');
   const [searchInput, setSearchInput] = useState('');
   const [searchResults, setSearchResults] = useState([]);
@@ -117,3 +117,5 @@ export default function Home() {
     </main>
   );
 }
+
+export default Home
