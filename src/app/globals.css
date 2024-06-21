@@ -19,13 +19,6 @@
 body {
   color: #f3f3f3;
   background: linear-gradient(to right, #111f32, #12182a, #1a1b41);
-  /* color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
 }
 
 @layer utilities {
@@ -82,6 +75,9 @@ body {
   border: 1px solid #102743;
 }
 
+.tab-content .block .mx-auto.max-w-7xl.items-center.justify-between.lg\:px-8 {
+  padding: 0;
+}
 
 @media (max-width:500px) {
   .movie-name-container {
