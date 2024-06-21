@@ -3,7 +3,7 @@ import DetailsPage from '@/components/DetailsPage'
 import useFetchDetails from '@/hooks/useFetchDetails'
 import { useParams } from 'next/navigation'
 
-const page = () => {
+const Page = () => {
   const param = useParams()
   const { data: movieDetails, loading } = useFetchDetails(`/movie/${param?.id}`)
 
@@ -22,4 +22,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
