@@ -7,7 +7,7 @@ const Card = ({ movie, url }) => {
   const imageURL = useSelector(state => state.movieData.imageURL);
   
   return (
-    <Link href={`${url}/${movie?.id}`}>
+    <Link href={`${url}/${movie?.id}`} key={movie?.id}>
       <div className="movie-card max-w-sm rounded overflow-hidden shadow-lg bg-white p-2 relative">
         <div className="relative">
           <img className="w-full rounded" src={`${imageURL}${movie?.poster_path}`} alt={movie?.name} />

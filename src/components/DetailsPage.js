@@ -58,7 +58,7 @@ const DetailsPage = ({ movieDetails }) => {
               <p className="text-gray-300 flex">
                 {
                   movieDetails?.genres?.map((item) => (
-                    <span>{item?.name}, &nbsp;</span>
+                    <span key={item?.id}>{item?.name}, &nbsp;</span>
                   ))
                 }
               </p>
